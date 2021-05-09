@@ -1,6 +1,4 @@
 package kr.mjc.dowon.web.article;
-
-import kr.mjc.dowon.web.dao.Article;
 import kr.mjc.dowon.web.dao.ArticleDao;
 import kr.mjc.dowon.web.dao.User;
 import kr.mjc.dowon.web.dao.UserDao;
