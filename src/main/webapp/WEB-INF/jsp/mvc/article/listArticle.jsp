@@ -6,12 +6,15 @@
 <html>
 <body>
 <nav><a href="./articleForm">게시물 등록</a>
-    <a href="./selectArticleForm">게시물 조회</a></nav>
 <h3>게시글 목록</h3>
 <%
     List<Article> articleList = (List<Article>) request.getAttribute("articleList");
     for (Article article : articleList) {%>
 <p><%= article %>
+    <% String userNames = article.getName(); %>
+    <% int articleId = article.getArticleId(); %>
+
+    <a href="/article/getArticle?num=<%=article.getArticleId()%>"> <%= userNames%>님의 게시글(<%= articleId%>번) 보러 가기 </a>
 </p>
 <%
     }

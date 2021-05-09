@@ -25,7 +25,7 @@ public class ArticleDao {
       from article where articleId=?""";
 
     private static final String ADD_ARTICLE = """
-      insert article(title, content, userId, name)
+      insert article(title, content, userId, name
       values(:title, :content, :userId, :name)""";
 
     private static final String UPDATE_ARTICLE = """
